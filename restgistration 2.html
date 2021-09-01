@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <title> registration form </title>
+    <style type="text/css">
+    *{margin:0px;
+    padding: 0px;}
+    
+    body{
+        background-color: rgba(250, 212, 250, 0.774);
+        font-family: Roboto,sans-serif;
+
+    }
+    .form{height:1100px;
+    width:800px;
+margin:auto;
+}
+.required{color:red;
+    font-size: 20px;
+    padding-top: 50px;
+}
+.title-div{
+    height:150px;
+    width:600px;
+    background-color:rgba(245, 241, 245, 0.76);
+    border-radius: 8px;
+    border-top:8px solid #f54ac2;
+    padding: 25px;
+    margin:15px;
+      
+}
+ .name-div{height:150px;
+    width:600px;
+    background-color:rgba(245, 241, 245, 0.76);
+    border-radius: 8px;
+    padding: 25px;
+    margin:15px;}
+
+
+
+.name {padding-top:25px;
+padding-bottom:25px;
+padding-left:25px;
+font-size:20px;}
+
+.input-div, .radio-div {padding-top: 25px;
+padding-left: 30px;}
+
+.input-div input{width:300px;
+outline: 0px;
+border:0px;
+border-bottom: 2px solid rgba(177, 175, 177, 0.76);}
+
+.sudmit{
+    width:100px;
+    height:40px;
+    background-color:#f54ac2 ;
+    position: absolute; 
+    color: white;
+    border-radius: 5px;
+    font-weight: 540;
+    font-size: 15px;
+    animation: mymove 5s infinite;
+}
+ @keyframes mymove { 50% {left:500px;}
+}
+    
+    </style>
+    </head>
+    <body>
+    <div class="form">
+    <div class="title-div">
+        <h2>Goggle Survey Form</h2>
+        <br>
+        <p>This is a  survey form created with  HTML ans CSS for Child Labour</p>
+         <br>
+        <p class="required">*Required</p>
+        </div>
+    
+     <div class="name-div">
+         <div class="name">What is your name:<span class="required">*</span></div>
+         <div class="input-div"><input type="input" placeholder="your name" name="answer"></div>
+      </div>   
+      <div class="name-div">
+        <div class="name">What is your college name:<span class="required">*</span></div>
+        <div class="input-div"><input type="input" placeholder="college name" name="answer"></div>
+     </div>
+     <div class="name-div">
+        <div class="name">Enter E-mail ID:</div>
+        <div class="input-div"><input type="input" placeholder="Email ID" name="answer"></div>
+     </div>
+     <div class="name-div">
+        <div class="name">Phone Number<span class="required">*</span></div>
+        <div class="input-div"><input type="input" placeholder="Phone number" name="answer"></div>
+     </div>
+     <div class="name-div">
+        <div class="name">Enter the Address: </div>
+        <div class="input-div"><input type="input" placeholder="your address" name="answer"></div>
+     </div>
+     <div class="name-div">
+        <div class="name">Date of Birth:</div>
+        <div class="input-div"><input type="input" placeholder="DD-MM-YYYY" name="answer"></div>
+     </div>
+     <div class="name-div" type="radio" name="pole" >Do you Encourage child labour ?<span class="required">*</span>
+     <div class="radio-div">
+        <input  type="radio" name="pole" id="YES">
+<label for="radio">YES</label></div>
+<div class="radio-div">
+<input  type="radio" name="pole" id="NO"> 
+<label for="radio">NO</label><br></div>
+
+</div>
+<div class="name-div" type="radio" name="pole" >Did You notice such pratices  going in your area ?<span class="required">*</span><br>
+    <div class="radio-div">
+    <input  type="radio" name="pole" id="YES">
+<label for="radio">YES</label></div>
+<div class="radio-div">
+<input  type="radio" name="pole" id="NO"> 
+<label for="radio">NO</label></div>
+</div>
+
+<div class="name-div">
+<div class="name">Upload picture if yes</div>
+<div class="input.div"><input class="name" type="file" name="CV"></div>
+</div>
+<div class="name-div">
+    <div class="name">Things should be improved to Eradicate child labour:<span class="required">*</span></div>
+    <div class="input-div"><input   type="input" placeholder=" enter your suggestions" name="answer"></div>
+ </div>
+ <div class="name">
+ <input class="sudmit" type="button" value="sudmit" >
+ </div>
+</div>
+</body>
+</html>
